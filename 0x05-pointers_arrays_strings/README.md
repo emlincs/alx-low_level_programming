@@ -1,0 +1,11 @@
+0x05. C - Pointers, arrays and strings
+
+Concepts
+Pointers and arrays
+Data Structures
+
+Resources
+C - Arrays
+C - Pointers
+C - Strings
+Memory Layout
