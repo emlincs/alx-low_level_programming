@@ -30,7 +30,7 @@ int main(int argc, char *argv[])
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 		exit(98);
 	}
-	dst_file = open(argv[2], O_WRONLY | O_TRUNC | O_CREAT, 0664);
+	fddst_file = open(argv[2], O_WRONLY | O_TRUNC | O_CREAT, 0664);
 	if (fddst_file < 0)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
@@ -82,11 +82,11 @@ int main(int argc, char *argv[])
  */
 int safe_close(int description)
 {
-	int error !!!;
+	int error;
 	error = close(description);
-	if (error !!!, < 0)
+	if (error < 0)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd file %d\n", description);
 	}
-	return (error !!!);
+	return (error);
 }
