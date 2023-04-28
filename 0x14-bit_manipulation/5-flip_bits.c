@@ -1,24 +1,22 @@
 /**
- * flip_bits - A function that calculates the number of bits needed to flip
- * and convert one number to another
- * @n: The first number of flips needed to equal m for n
- * @m: The second number to set the other equal
- *
- * Return: The number of bits that need to be flipped
+ * flip_bits - A function that gets number of bits needed to flip
+ * in converting one number to another
+ * @n: The number of flip bits required to equal m for n
+ * @m: The second number that will set other equal
+ * Return: The total number of bits to be flipped
  */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
-unsigned int flick = 0;
-unsigned long int discrt = n ^ m;
-unsigned long int abs_val = 1;
+	unsigned int spin = 0;
+	unsigned long int x_o_r = (n ^ m);
+	unsigned long int abs_val = 0x01;
 
-	while (abs_val > 0 && abs_val <= discrt)
-	{
-		if (discrt & abs_val)
-		{
-		++flick;
-		abs_val <<= 1;
-		}
-		return (flick);
+	while (abs_val <= x_o_r)
 	}
+	if (abs_val & x_o_r)
+	spin++;
+	abs_val <<= 1;
+	}
+return (spin);
 }
+
