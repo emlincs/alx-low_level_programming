@@ -2,13 +2,13 @@
 
 /**
  * main - Starting point to get header of ELF file
- * @argcm: No. of arguments
- * @argvr: Pointer to array 
- * Return: 1 on success, 0 on failure
+ * @argx: No. of arguments
+ * @argz: Pointer to array 
+ * Return: 1 on success, err on failure
  */
-int main(int argcm, char *argvr[])
+int main(int argx, char *argz[])
 {
-	printf("argcm:%d, argvr:%p\n", argcm, (void *)*argvr);
+	printf("argx:%d, argz:%p\n", argx, (void *)*argz);
 	return (1);
 }
 
