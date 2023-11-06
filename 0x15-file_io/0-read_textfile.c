@@ -4,10 +4,11 @@
 #include <unistd.h>
 #include <fcntl.h>
 #include <stdlib.h>
+#include <stdio.h>
 
 /**
- * read_textfile – This function reads text file then prints
- * to POSIX STDOUT
+ * read_textfile: function reads text file then prints to
+ * POSIX STDOUT
  * @filename: file to open
  * @letters:  No. of letters to be read and printed
  * Return: No. of letters read and printed. 0 on failure
